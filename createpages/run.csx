@@ -1,4 +1,13 @@
+using System;
+using NewtonSoft.Json;
+using Microsoft.SharePoint.Client;
+using OfficeDevPnP.Core;
+using OfficeDevPnP.Pages;
 using System.Net;
+
+private static readonly string ADMIN_USER_CONFIG_KEY = "SharePointAdminUser";
+
+private static readonly string ADMIN_PASSWORD_CONFIG_KEY = "SharePointAdminPassword";
 
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
 {
